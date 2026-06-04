@@ -1,4 +1,4 @@
-# 🔬 Failure Forensics
+# Failure Forensics
 
 **AI Pipeline Observability Tool** — Trace, diagnose, and learn from AI pipeline failures.
 
@@ -230,13 +230,13 @@ docker-compose up --build
 
 ## Key Features
 
-### 🔍 Trace Explorer
+### Trace Explorer
 Every pipeline execution is captured as a structured trace with full span details — inputs, outputs, LLM prompts, raw responses, token counts, latency, and self-assessed confidence scores.
 
-### 🎯 Backward Root Cause Analysis
+### Backward Root Cause Analysis
 When a trace is flagged, the system walks backward through spans using an LLM-as-judge to score each step's output quality. The first step with a significant quality drop is identified as the root cause.
 
-### 🏷️ Failure Taxonomy
+### Failure Taxonomy
 Failures are automatically categorized:
 - **Extraction Hallucination** — entities that don't exist in the source
 - **Misclassification** — wrong document type
@@ -244,10 +244,10 @@ Failures are automatically categorized:
 - **Prompt Failure** — LLM ignored instructions
 - **Context Loss** — important information dropped
 
-### 📊 Feedback-to-Eval Loop
+### Feedback-to-Eval Loop
 Every confirmed diagnosis becomes a test case in a growing evaluation dataset. Run regression tests to track whether known failures are fixed or still present.
 
-### 📈 Failure Analytics
+### Failure Analytics
 Dashboard showing failure rates, most common failure types, which pipeline step fails most, and trends over time.
 
 ---
