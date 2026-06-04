@@ -216,7 +216,7 @@ docker-compose up --build
 
 ## Demo Walkthrough
 
-1. **Open the dashboard** at `http://localhost:8080`
+1. **Open the dashboard** at `http://localhost:8080` (if using Docker) or `http://localhost:5173` (if running manually with npm)
 2. **Click "Run Demo (50 docs)"** to process all sample documents
 3. **Browse traces** — notice ~10 have degraded/failed status
 4. **Click a failed trace** — see the animated pipeline visualization
