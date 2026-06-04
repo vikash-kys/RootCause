@@ -1,5 +1,5 @@
 """
-Pydantic models for every data structure in the Failure Forensics pipeline.
+Pydantic models for every data structure in the RootCause pipeline.
 Every intermediate stage has a typed model, making traces meaningful and serializable.
 """
 

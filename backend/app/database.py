@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 
 DATABASE_DIR = Path(__file__).parent.parent / "data"
-DATABASE_PATH = DATABASE_DIR / "failure_forensics.db"
+DATABASE_PATH = DATABASE_DIR / "root_cause.db"
 
 SCHEMA = """
 CREATE TABLE IF NOT EXISTS traces (

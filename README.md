@@ -1,4 +1,4 @@
-# RootCause- Failure Forensics
+# RootCause
 
 **AI Pipeline Observability Tool** — Trace, diagnose, and learn from AI pipeline failures.
 
@@ -24,7 +24,7 @@ Was it the extraction that hallucinated a name? Was the document classified as a
 
 ### What This Tool Does
 
-Failure Forensics is like a **flight recorder (black box) for AI pipelines**. It:
+RootCause is like a **flight recorder (black box) for AI pipelines**. It:
 
 1. **Records everything** — Every step logs what went in, what came out, what prompt was sent to the LLM, how confident the LLM was, and how long it took. This is called a **trace**.
 2. **Finds the culprit automatically** — When output is bad, instead of you debugging manually, it walks **backward** through the steps and asks an LLM judge: *"Does this step's output make sense given its input?"* The first step where quality drops significantly is flagged as the **root cause**.
@@ -108,7 +108,7 @@ async def classify(text, entities):
 
 ### Step 2: Wrap Each Step With `@traced`
 
-To integrate Failure Forensics, they add our decorator — that's it:
+To integrate RootCause, they add our decorator — that's it:
 
 ```python
 from app.tracing.tracer import traced, TraceContext
@@ -176,8 +176,8 @@ The system is designed as a **drop-in instrumentation layer**. You define your p
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/failure-forensics.git
-cd failure-forensics
+git clone https://github.com/yourusername/root-cause.git
+cd root-cause
 
 # Start the full stack
 docker-compose up --build
@@ -270,7 +270,7 @@ Dashboard showing failure rates, most common failure types, which pipeline step 
 ## Project Structure
 
 ```
-failure-forensics/
+root-cause/
 ├── backend/
 │   ├── app/
 │   │   ├── api/            # FastAPI routes

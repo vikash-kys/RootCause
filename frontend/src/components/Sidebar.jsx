@@ -17,7 +17,7 @@ export default function Sidebar() {
         <div className="sidebar-logo">
           <div className="logo-icon">FF</div>
           <div>
-            <h1>Failure Forensics</h1>
+            <h1>RootCause</h1>
             <div className="logo-subtitle">AI Pipeline Observability</div>
           </div>
         </div>

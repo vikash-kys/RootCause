@@ -1,5 +1,5 @@
 """
-FastAPI application entry point for Failure Forensics.
+FastAPI application entry point for RootCause.
 Configures CORS, startup/shutdown hooks, and mounts API routes.
 """
 
@@ -24,7 +24,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Failure Forensics",
+    title="RootCause",
     description="AI Pipeline Observability Tool — Trace, diagnose, and learn from AI pipeline failures.",
     version="1.0.0",
     lifespan=lifespan,
@@ -51,4 +51,4 @@ app.include_router(router)
 @app.get("/health")
 async def health_check():
     """Health check endpoint for Docker/monitoring."""
-    return {"status": "healthy", "service": "failure-forensics-api"}
+    return {"status": "healthy", "service": "root-cause-api"}

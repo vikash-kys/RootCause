@@ -1,5 +1,5 @@
 /**
- * API client for communicating with the Failure Forensics backend.
+ * API client for communicating with the RootCause backend.
  */
 
 const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000';

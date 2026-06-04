@@ -1,5 +1,5 @@
 """
-REST API routes for the Failure Forensics platform.
+REST API routes for the RootCause platform.
 All endpoints for pipeline execution, trace viewing, flagging, analysis, and feedback.
 """
 
